@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div
+      class="w-device-width relative bg-background-default-default overflow-hidden flex flex-col items-start justify-start leading-[normal] tracking-[normal]"
+    >
+      <header
+        class="bg-background-default-default box-border overflow-hidden flex flex-row flex-wrap items-center justify-start pt-space-800 px-space-800 pb-[30px] gap-[0px_22px] top-[0] z-[99] sticky max-w-full border-b-[1px] border-solid border-border-default-default"
+      >
+        <div class="flex flex-row items-center justify-start gap-[24px]">
+          <div
+            class="h-11 w-11 rounded-scale-06 bg-background-default-secondary box-border overflow-hidden shrink-0 hidden flex-row items-center justify-center py-space-300 px-[11px] border-[1px] border-solid border-border-default-default"
+          >
+            <img
+              class="h-5 w-5 relative overflow-hidden shrink-0"
+              alt=""
+              src="/public/menu16.svg"
+            />
+          </div>
+          <div
+            class="h-11 w-11 rounded-scale-06 bg-background-default-secondary box-border overflow-hidden shrink-0 hidden flex-row items-center justify-center py-space-300 px-[11px] border-[1px] border-solid border-border-default-default"
+          >
+            <img
+              class="h-5 w-5 relative overflow-hidden shrink-0"
+              alt=""
+              src="/public/x16.svg"
+            />
+          </div>
+          <div class="flex flex-row items-center justify-center py-0 px-2">
+            <img
+              class="h-[35px] w-[23.3px] relative"
+              loading="lazy"
+              alt=""
+              src="/public/icon.svg"
+            />
+          </div>
+        </div>
+        <nav
+          class="m-0 flex flex-row flex-wrap items-center justify-end py-0 pr-0 pl-[538px] box-border gap-[8px] max-w-full text-left text-base text-text-default-default font-body-base mq450:pl-5 mq450:box-border mq725:hidden mq975:pl-[269px] mq975:box-border"
+        >
+          <div
+            class="rounded-radius-200 bg-background-default-secondary hidden flex-row items-center justify-center p-2"
+          >
+            <div class="relative leading-[100%]">Pricing</div>
+          </div>
+          <div
+            class="rounded-radius-200 flex flex-row items-center justify-center p-2"
+          >
+            <div class="relative leading-[100%] inline-block min-w-[62px]">
+              Projects
+            </div>
+          </div>
+          <div
+            class="self-stretch rounded-radius-200 hidden flex-row items-center justify-center p-2"
+          >
+            <div class="self-stretch relative leading-[100%] flex items-center">
+              Community
+            </div>
+          </div>
+          <div
+            class="rounded-radius-200 flex flex-row items-center justify-center p-2"
+          >
+            <div class="relative leading-[100%] inline-block min-w-[79px]">
+              Resources
+            </div>
+          </div>
+          <div
+            class="rounded-radius-200 flex flex-row items-center justify-center p-2"
+          >
+            <div class="relative leading-[100%] inline-block min-w-[42px]">
+              Blogs
+            </div>
+          </div>
+          <div
+            class="rounded-radius-200 flex flex-row items-center justify-center p-2"
+          >
+            <div class="relative leading-[100%] inline-block min-w-[61px]">
+              Contact
+            </div>
+          </div>
+        </nav>
+        <div
+          class="w-[178px] flex flex-row items-center justify-start gap-[12px]"
+        >
+          <button
+            class="cursor-pointer py-1.5 px-[15px] bg-background-neutral-tertiary flex-[0.8095] rounded-radius-200 overflow-hidden flex flex-row items-center justify-center gap-[8px] border-[1px] border-solid border-border-neutral-secondary"
+          >
+            <img
+              class="h-4 w-4 relative overflow-hidden shrink-0 hidden min-h-[16px]"
+              alt=""
+              src="/public/star.svg"
+            />
+
+            <div
+              class="relative text-base leading-[100%] font-body-base text-text-default-default text-left inline-block min-w-[51px] whitespace-nowrap"
+            >
+              Sign in
+            </div>
+            <img
+              class="h-4 w-4 relative overflow-hidden shrink-0 hidden min-h-[16px]"
+              alt=""
+              src="/public/x.svg"
+            />
+          </button>
+          <button
+            class="cursor-pointer py-1.5 px-[9px] bg-background-brand-default flex-1 rounded-radius-200 overflow-hidden flex flex-row items-center justify-center gap-[8px] border-[1px] border-solid border-background-brand-default"
+          >
+            <img
+              class="h-4 w-4 relative overflow-hidden shrink-0 hidden min-h-[16px]"
+              alt=""
+              src="/public/star1.svg"
+            />
+
+            <div
+              class="relative text-base leading-[100%] font-body-base text-background-default-secondary text-left inline-block min-w-[63px]"
+            >
+              Register
+            </div>
+            <img
+              class="h-4 w-4 relative overflow-hidden shrink-0 hidden min-h-[16px]"
+              alt=""
+              src="/public/x1.svg"
+            />
+          </button>
+        </div>
+      </header>
+      <section
+        class="self-stretch bg-background-default-secondary flex flex-row items-start justify-center py-space-4000 px-5 box-border max-w-full text-center text-53xl text-text-default-default font-body-base mq450:pt-[104px] mq450:pb-[104px] mq450:box-border"
+      >
+        <div
+          class="w-[534px] flex flex-col items-start justify-start gap-[8px] max-w-full"
+        >
+          <h1
+            class="m-0 self-stretch relative text-inherit tracking-[-0.03em] leading-[120%] font-bold font-inherit mq450:text-[43px] mq450:leading-[52px] mq975:text-[58px] mq975:leading-[69px]"
+          >
+            Keval Kanpariya
+          </h1>
+          <h1
+            class="m-0 self-stretch relative text-13xl leading-[120%] font-normal font-inherit text-text-default-secondary mq450:text-lgi mq450:leading-[23px] mq975:text-[26px] mq975:leading-[31px]"
+          >
+            Android Engineer
+          </h1>
+        </div>
+      </section>
+      <section
+        class="self-stretch bg-background-default-default flex flex-col items-start justify-start p-16 box-border gap-[48px] max-w-full text-left text-5xl text-text-default-default font-body-base mq725:gap-[24px] mq725:py-space-1600 mq725:px-space-1600 mq725:box-border mq1000:pt-[42px] mq1000:pb-[42px] mq1000:box-border"
+      >
+        <div
+          class="w-[113px] flex flex-col items-start justify-start gap-[8px]"
+        >
+          <h3
+            class="m-0 self-stretch relative text-inherit tracking-[-0.02em] leading-[29px] font-semibold font-inherit mq450:text-lgi mq450:leading-[23px]"
+          >
+            Heading
+          </h3>
+          <div
+            class="relative text-xl leading-[120%] text-text-default-secondary inline-block min-w-[113px] mq450:text-base mq450:leading-[19px]"
+          >
+            Subheading
+          </div>
+        </div>
+        <div
+          class="self-stretch flex flex-row flex-wrap items-center justify-start py-0 pr-1 pl-0 box-border gap-[48px_46px] max-w-full mq725:gap-[23px]"
+        >
+          <div
+            class="flex-1 rounded-radius-200 bg-background-default-default box-border flex flex-row flex-wrap items-start justify-start p-6 gap-[24px] min-w-[240px] min-h-[357px] max-w-full border-[1px] border-solid border-border-default-default"
+          >
+            <img
+              class="h-40 w-40 overflow-hidden shrink-0 object-cover min-w-[160px]"
+              loading="lazy"
+              alt=""
+              src="/public/image@2x.png"
+            />
+
+            <div
+              class="flex-1 flex flex-col items-start justify-start gap-[16px] min-w-[160px]"
+            >
+              <div
+                class="self-stretch flex flex-col items-start justify-start gap-[8px]"
+              >
+                <h3
+                  class="m-0 self-stretch relative text-inherit tracking-[-0.02em] leading-[29px] font-semibold font-inherit mq450:text-lgi mq450:leading-[23px]"
+                >
+                  Title
+                </h3>
+                <div
+                  class="self-stretch relative text-base leading-[140%] text-text-default-secondary"
+                >
+                  Body text for whatever you’d like to say. Add main takeaway
+                  points, quotes, anecdotes, or even a very very short story.
+                </div>
+              </div>
+              <div
+                class="w-52 hidden flex-row items-center justify-start gap-[16px] text-base text-text-neutral-default"
+              >
+                <div
+                  class="h-10 rounded-radius-200 overflow-hidden hidden flex-row items-center justify-center p-3 box-border gap-[8px]"
+                >
+                  <img
+                    class="h-4 w-4 relative overflow-hidden shrink-0 hidden min-h-[16px]"
+                    alt=""
+                    src="/public/star.svg"
+                  />
+
+                  <div class="self-stretch relative leading-[100%]">Button</div>
+                  <img
+                    class="h-4 w-4 relative overflow-hidden shrink-0 hidden min-h-[16px]"
+                    alt=""
+                    src="/public/x.svg"
+                  />
+                </div>
+                <div
+                  class="h-10 rounded-radius-200 bg-background-neutral-tertiary box-border overflow-hidden flex flex-row items-center justify-center py-space-300 px-[11px] gap-[8px] text-text-default-default border-[1px] border-solid border-border-neutral-secondary"
+                >
+                  <img
+                    class="h-4 w-4 relative overflow-hidden shrink-0 hidden min-h-[16px]"
+                    alt=""
+                    src="/public/star.svg"
+                  />
+
+                  <div class="self-stretch relative leading-[100%]">Button</div>
+                  <img
+                    class="h-4 w-4 relative overflow-hidden shrink-0 hidden min-h-[16px]"
+                    alt=""
+                    src="/public/x.svg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex-1 rounded-radius-200 bg-background-default-default box-border flex flex-row flex-wrap items-start justify-start p-6 gap-[24px] min-w-[240px] min-h-[357px] max-w-full border-[1px] border-solid border-border-default-default"
+          >
+            <img
+              class="h-40 w-40 overflow-hidden shrink-0 object-cover min-w-[160px]"
+              loading="lazy"
+              alt=""
+              src="/public/image-1@2x.png"
+            />
+
+            <div
+              class="flex-1 flex flex-col items-start justify-start gap-[16px] min-w-[160px]"
+            >
+              <div
+                class="self-stretch flex flex-col items-start justify-start gap-[8px]"
+              >
+                <h3
+                  class="m-0 self-stretch relative text-inherit tracking-[-0.02em] leading-[29px] font-semibold font-inherit mq450:text-lgi mq450:leading-[23px]"
+                >
+                  Title
+                </h3>
+                <div
+                  class="self-stretch relative text-base leading-[140%] text-text-default-secondary"
+                >
+                  Body text for whatever you’d like to say. Add main takeaway
+                  points, quotes, anecdotes, or even a very very short story.
+                </div>
+              </div>
+              <div
+                class="w-52 hidden flex-row items-center justify-start gap-[16px] text-base text-text-neutral-default"
+              >
+                <div
+                  class="h-10 rounded-radius-200 overflow-hidden hidden flex-row items-center justify-center p-3 box-border gap-[8px]"
+                >
+                  <img
+                    class="h-4 w-4 relative overflow-hidden shrink-0 hidden min-h-[16px]"
+                    alt=""
+                    src="/public/star.svg"
+                  />
+
+                  <div class="self-stretch relative leading-[100%]">Button</div>
+                  <img
+                    class="h-4 w-4 relative overflow-hidden shrink-0 hidden min-h-[16px]"
+                    alt=""
+                    src="/public/x.svg"
+                  />
+                </div>
+                <div
+                  class="h-10 rounded-radius-200 bg-background-neutral-tertiary box-border overflow-hidden flex flex-row items-center justify-center py-space-300 px-[11px] gap-[8px] text-text-default-default border-[1px] border-solid border-border-neutral-secondary"
+                >
+                  <img
+                    class="h-4 w-4 relative overflow-hidden shrink-0 hidden min-h-[16px]"
+                    alt=""
+                    src="/public/star.svg"
+                  />
+
+                  <div class="self-stretch relative leading-[100%]">Button</div>
+                  <img
+                    class="h-4 w-4 relative overflow-hidden shrink-0 hidden min-h-[16px]"
+                    alt=""
+                    src="/public/x.svg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex-1 rounded-radius-200 bg-background-default-default box-border flex flex-row flex-wrap items-start justify-start p-6 gap-[24px] min-w-[240px] min-h-[357px] max-w-full border-[1px] border-solid border-border-default-default"
+          >
+            <img
+              class="h-40 w-40 overflow-hidden shrink-0 object-cover min-w-[160px]"
+              loading="lazy"
+              alt=""
+              src="/public/image-2@2x.png"
+            />
+
+            <div
+              class="flex-1 flex flex-col items-start justify-start gap-[16px] min-w-[160px]"
+            >
+              <div
+                class="self-stretch flex flex-col items-start justify-start gap-[8px]"
+              >
+                <h3
+                  class="m-0 self-stretch relative text-inherit tracking-[-0.02em] leading-[29px] font-semibold font-inherit mq450:text-lgi mq450:leading-[23px]"
+                >
+                  Title
+                </h3>
+                <div
+                  class="self-stretch relative text-base leading-[140%] text-text-default-secondary"
+                >
+                  Body text for whatever you’d like to say. Add main takeaway
+                  points, quotes, anecdotes, or even a very very short story.
+                </div>
+              </div>
+              <div
+                class="w-52 hidden flex-row items-center justify-start gap-[16px] text-base text-text-neutral-default"
+              >
+                <div
+                  class="h-10 rounded-radius-200 overflow-hidden hidden flex-row items-center justify-center p-3 box-border gap-[8px]"
+                >
+                  <img
+                    class="h-4 w-4 relative overflow-hidden shrink-0 hidden min-h-[16px]"
+                    alt=""
+                    src="/public/star.svg"
+                  />
+
+                  <div class="self-stretch relative leading-[100%]">Button</div>
+                  <img
+                    class="h-4 w-4 relative overflow-hidden shrink-0 hidden min-h-[16px]"
+                    alt=""
+                    src="/public/x.svg"
+                  />
+                </div>
+                <div
+                  class="h-10 rounded-radius-200 bg-background-neutral-tertiary box-border overflow-hidden flex flex-row items-center justify-center py-space-300 px-[11px] gap-[8px] text-text-default-default border-[1px] border-solid border-border-neutral-secondary"
+                >
+                  <img
+                    class="h-4 w-4 relative overflow-hidden shrink-0 hidden min-h-[16px]"
+                    alt=""
+                    src="/public/star.svg"
+                  />
+
+                  <div class="self-stretch relative leading-[100%]">Button</div>
+                  <img
+                    class="h-4 w-4 relative overflow-hidden shrink-0 hidden min-h-[16px]"
+                    alt=""
+                    src="/public/x.svg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="self-stretch flex flex-row flex-wrap items-center justify-start py-0 pr-1 pl-0 box-border gap-[48px_46px] max-w-full mq725:gap-[23px]"
+        >
+          <div
+            class="flex-1 rounded-radius-200 bg-background-default-default box-border flex flex-row flex-wrap items-start justify-start p-6 gap-[24px] min-w-[240px] min-h-[357px] max-w-full border-[1px] border-solid border-border-default-default"
+          >
+            <img
+              class="h-40 w-40 overflow-hidden shrink-0 object-cover min-w-[160px]"
+              loading="lazy"
+              alt=""
+              src="/public/image@2x.png"
+            />
+
+            <div
+              class="flex-1 flex flex-col items-start justify-start gap-[16px] min-w-[160px]"
+            >
+              <div
+                class="self-stretch flex flex-col items-start justify-start gap-[8px]"
+              >
+                <h3
+                  class="m-0 self-stretch relative text-inherit tracking-[-0.02em] leading-[29px] font-semibold font-inherit mq450:text-lgi mq450:leading-[23px]"
+                >
+                  Title
+                </h3>
+                <div
+                  class="self-stretch relative text-base leading-[140%] text-text-default-secondary"
+                >
+                  Body text for whatever you’d like to say. Add main takeaway
+                  points, quotes, anecdotes, or even a very very short story.
+                </div>
+              </div>
+              <div
+                class="w-52 hidden flex-row items-center justify-start gap-[16px] text-base text-text-neutral-default"
+              >
+                <div
+                  class="h-10 rounded-radius-200 overflow-hidden hidden flex-row items-center justify-center p-3 box-border gap-[8px]"
+                >
+                  <img
+                    class="h-4 w-4 relative overflow-hidden shrink-0 hidden min-h-[16px]"
+                    alt=""
+                    src="/public/star.svg"
+                  />
+
+                  <div class="self-stretch relative leading-[100%]">Button</div>
+                  <img
+                    class="h-4 w-4 relative overflow-hidden shrink-0 hidden min-h-[16px]"
+                    alt=""
+                    src="/public/x.svg"
+                  />
+                </div>
+                <div
+                  class="h-10 rounded-radius-200 bg-background-neutral-tertiary box-border overflow-hidden flex flex-row items-center justify-center py-space-300 px-[11px] gap-[8px] text-text-default-default border-[1px] border-solid border-border-neutral-secondary"
+                >
+                  <img
+                    class="h-4 w-4 relative overflow-hidden shrink-0 hidden min-h-[16px]"
+                    alt=""
+                    src="/public/star.svg"
+                  />
+
+                  <div class="self-stretch relative leading-[100%]">Button</div>
+                  <img
+                    class="h-4 w-4 relative overflow-hidden shrink-0 hidden min-h-[16px]"
+                    alt=""
+                    src="/public/x.svg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex-1 rounded-radius-200 bg-background-default-default box-border flex flex-row flex-wrap items-start justify-start p-6 gap-[24px] min-w-[240px] min-h-[357px] max-w-full border-[1px] border-solid border-border-default-default"
+          >
+            <img
+              class="h-40 w-40 overflow-hidden shrink-0 object-cover min-w-[160px]"
+              loading="lazy"
+              alt=""
+              src="/public/image-1@2x.png"
+            />
+
+            <div
+              class="flex-1 flex flex-col items-start justify-start gap-[16px] min-w-[160px]"
+            >
+              <div
+                class="self-stretch flex flex-col items-start justify-start gap-[8px]"
+              >
+                <h3
+                  class="m-0 self-stretch relative text-inherit tracking-[-0.02em] leading-[29px] font-semibold font-inherit mq450:text-lgi mq450:leading-[23px]"
+                >
+                  Title
+                </h3>
+                <div
+                  class="self-stretch relative text-base leading-[140%] text-text-default-secondary"
+                >
+                  Body text for whatever you’d like to say. Add main takeaway
+                  points, quotes, anecdotes, or even a very very short story.
+                </div>
+              </div>
+              <div
+                class="w-52 hidden flex-row items-center justify-start gap-[16px] text-base text-text-neutral-default"
+              >
+                <div
+                  class="h-10 rounded-radius-200 overflow-hidden hidden flex-row items-center justify-center p-3 box-border gap-[8px]"
+                >
+                  <img
+                    class="h-4 w-4 relative overflow-hidden shrink-0 hidden min-h-[16px]"
+                    alt=""
+                    src="/public/star.svg"
+                  />
+
+                  <div class="self-stretch relative leading-[100%]">Button</div>
+                  <img
+                    class="h-4 w-4 relative overflow-hidden shrink-0 hidden min-h-[16px]"
+                    alt=""
+                    src="/public/x.svg"
+                  />
+                </div>
+                <div
+                  class="h-10 rounded-radius-200 bg-background-neutral-tertiary box-border overflow-hidden flex flex-row items-center justify-center py-space-300 px-[11px] gap-[8px] text-text-default-default border-[1px] border-solid border-border-neutral-secondary"
+                >
+                  <img
+                    class="h-4 w-4 relative overflow-hidden shrink-0 hidden min-h-[16px]"
+                    alt=""
+                    src="/public/star.svg"
+                  />
+
+                  <div class="self-stretch relative leading-[100%]">Button</div>
+                  <img
+                    class="h-4 w-4 relative overflow-hidden shrink-0 hidden min-h-[16px]"
+                    alt=""
+                    src="/public/x.svg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex-1 rounded-radius-200 bg-background-default-default box-border flex flex-row flex-wrap items-start justify-start p-6 gap-[24px] min-w-[240px] min-h-[357px] max-w-full border-[1px] border-solid border-border-default-default"
+          >
+            <img
+              class="h-40 w-40 overflow-hidden shrink-0 object-cover min-w-[160px]"
+              loading="lazy"
+              alt=""
+              src="/public/image-2@2x.png"
+            />
+
+            <div
+              class="flex-1 flex flex-col items-start justify-start gap-[16px] min-w-[160px]"
+            >
+              <div
+                class="self-stretch flex flex-col items-start justify-start gap-[8px]"
+              >
+                <h3
+                  class="m-0 self-stretch relative text-inherit tracking-[-0.02em] leading-[29px] font-semibold font-inherit mq450:text-lgi mq450:leading-[23px]"
+                >
+                  Title
+                </h3>
+                <div
+                  class="self-stretch relative text-base leading-[140%] text-text-default-secondary"
+                >
+                  Body text for whatever you’d like to say. Add main takeaway
+                  points, quotes, anecdotes, or even a very very short story.
+                </div>
+              </div>
+              <div
+                class="w-52 hidden flex-row items-center justify-start gap-[16px] text-base text-text-neutral-default"
+              >
+                <div
+                  class="h-10 rounded-radius-200 overflow-hidden hidden flex-row items-center justify-center p-3 box-border gap-[8px]"
+                >
+                  <img
+                    class="h-4 w-4 relative overflow-hidden shrink-0 hidden min-h-[16px]"
+                    alt=""
+                    src="/public/star.svg"
+                  />
+
+                  <div class="self-stretch relative leading-[100%]">Button</div>
+                  <img
+                    class="h-4 w-4 relative overflow-hidden shrink-0 hidden min-h-[16px]"
+                    alt=""
+                    src="/public/x.svg"
+                  />
+                </div>
+                <div
+                  class="h-10 rounded-radius-200 bg-background-neutral-tertiary box-border overflow-hidden flex flex-row items-center justify-center py-space-300 px-[11px] gap-[8px] text-text-default-default border-[1px] border-solid border-border-neutral-secondary"
+                >
+                  <img
+                    class="h-4 w-4 relative overflow-hidden shrink-0 hidden min-h-[16px]"
+                    alt=""
+                    src="/public/star.svg"
+                  />
+
+                  <div class="self-stretch relative leading-[100%]">Button</div>
+                  <img
+                    class="h-4 w-4 relative overflow-hidden shrink-0 hidden min-h-[16px]"
+                    alt=""
+                    src="/public/x.svg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer
+        class="self-stretch bg-background-default-default overflow-hidden flex flex-row flex-wrap items-start justify-start pt-[30px] px-space-800 pb-space-4000 gap-[16px] text-left text-base text-text-default-default font-body-base border-t-[1px] border-solid border-border-default-default mq725:pt-5 mq725:pb-[104px] mq725:box-border"
+      >
+        <div
+          class="w-[262px] flex flex-col items-start justify-start gap-[24px] min-w-[240px]"
+        >
+          <div class="flex flex-row items-center justify-center">
+            <img
+              class="h-[35px] w-[23.3px] relative"
+              loading="lazy"
+              alt=""
+              src="/public/icon-1.svg"
+            />
+          </div>
+          <div class="flex flex-row items-start justify-start gap-[16px]">
+            <img
+              class="h-6 w-6 relative min-h-[24px]"
+              loading="lazy"
+              alt=""
+              src="/public/x-logo.svg"
+            />
+
+            <img
+              class="h-6 w-6 relative overflow-hidden shrink-0 min-h-[24px]"
+              loading="lazy"
+              alt=""
+              src="/public/logo-instagram.svg"
+            />
+
+            <img
+              class="h-6 w-6 relative overflow-hidden shrink-0 min-h-[24px]"
+              loading="lazy"
+              alt=""
+              src="/public/logo-youtube.svg"
+            />
+
+            <img
+              class="h-6 w-6 relative overflow-hidden shrink-0 min-h-[24px]"
+              loading="lazy"
+              alt=""
+              src="/public/linkedin.svg"
+            />
+          </div>
+        </div>
+        <div
+          class="w-[262px] flex flex-col items-start justify-start gap-[12px]"
+        >
+          <div
+            class="self-stretch flex flex-row items-start justify-start pt-0 px-0 pb-space-400"
+          >
+            <div class="flex-1 flex flex-row items-start justify-start">
+              <div
+                class="relative leading-[140%] font-semibold inline-block min-w-[80px]"
+              >
+                Use cases
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-row items-start justify-start py-0 pr-[17px] pl-0"
+          >
+            <div class="relative leading-[140%] inline-block min-w-[72px]">
+              UI design
+            </div>
+          </div>
+          <div
+            class="flex flex-row items-start justify-start py-0 pr-[11px] pl-0"
+          >
+            <div class="relative leading-[140%] inline-block min-w-[78px]">
+              UX design
+            </div>
+          </div>
+          <div class="flex flex-row items-start justify-start py-0 px-0">
+            <div
+              class="relative leading-[140%] inline-block min-w-[92px] shrink-0"
+            >
+              Wireframing
+            </div>
+          </div>
+          <div
+            class="w-[89px] flex flex-row items-start justify-start py-0 px-0 box-border"
+          >
+            <div
+              class="w-[100px] relative leading-[140%] flex items-center shrink-0"
+            >
+              Diagramming
+            </div>
+          </div>
+          <div
+            class="w-[89px] flex flex-row items-start justify-start py-0 px-0 box-border"
+          >
+            <div
+              class="w-[105px] relative leading-[140%] flex items-center shrink-0"
+            >
+              Brainstorming
+            </div>
+          </div>
+          <div
+            class="w-[89px] flex flex-row items-start justify-start py-0 px-0 box-border"
+          >
+            <div
+              class="w-[138px] relative leading-[140%] flex items-center shrink-0"
+            >
+              Online whiteboard
+            </div>
+          </div>
+          <div
+            class="w-[89px] flex flex-row items-start justify-start py-0 px-0 box-border"
+          >
+            <div
+              class="w-36 relative leading-[140%] flex items-center shrink-0"
+            >
+              Team collaboration
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-[262px] flex flex-col items-start justify-start gap-[12px]"
+        >
+          <div
+            class="self-stretch flex flex-row items-start justify-start pt-0 px-0 pb-space-400"
+          >
+            <div class="flex-1 flex flex-row items-start justify-start">
+              <div
+                class="relative leading-[140%] font-semibold inline-block min-w-[59px]"
+              >
+                Explore
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-row items-start justify-start py-0 pr-9 pl-0">
+            <div class="relative leading-[140%] inline-block min-w-[53px]">
+              Design
+            </div>
+          </div>
+          <div class="flex flex-row items-start justify-start">
+            <div class="relative leading-[140%] inline-block min-w-[89px]">
+              Prototyping
+            </div>
+          </div>
+          <div
+            class="w-[89px] flex flex-row items-start justify-start py-0 px-0 box-border"
+          >
+            <div
+              class="w-[167px] relative leading-[140%] flex items-center shrink-0"
+            >
+              Development features
+            </div>
+          </div>
+          <div
+            class="w-[89px] flex flex-row items-start justify-start py-0 px-0 box-border"
+          >
+            <div
+              class="w-[120px] relative leading-[140%] flex items-center shrink-0"
+            >
+              Design systems
+            </div>
+          </div>
+          <div
+            class="w-[89px] flex flex-row items-start justify-start py-0 px-0 box-border"
+          >
+            <div
+              class="w-[168px] relative leading-[140%] flex items-center shrink-0"
+            >
+              Collaboration features
+            </div>
+          </div>
+          <div
+            class="w-[89px] flex flex-row items-start justify-start py-0 px-0 box-border"
+          >
+            <div
+              class="w-[117px] relative leading-[140%] flex items-center shrink-0"
+            >
+              Design process
+            </div>
+          </div>
+          <div
+            class="flex flex-row items-start justify-start py-0 pr-[34px] pl-0"
+          >
+            <div class="relative leading-[140%] inline-block min-w-[55px]">
+              FigJam
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-[262px] flex flex-col items-start justify-start gap-[12px]"
+        >
+          <div
+            class="self-stretch flex flex-row items-start justify-start pt-0 px-0 pb-space-400"
+          >
+            <div class="flex-1 flex flex-row items-start justify-start">
+              <div
+                class="relative leading-[140%] font-semibold inline-block min-w-[82px]"
+              >
+                Resources
+              </div>
+            </div>
+          </div>
+          <div class="w-[89px] flex flex-row items-start justify-start">
+            <div class="relative leading-[140%] inline-block min-w-[34px]">
+              Blog
+            </div>
+          </div>
+          <div
+            class="w-[89px] flex flex-row items-start justify-start py-0 px-0 box-border"
+          >
+            <div
+              class="w-[109px] relative leading-[140%] flex items-center shrink-0"
+            >
+              Best practices
+            </div>
+          </div>
+          <div class="flex flex-row items-start justify-start py-0 pr-10 pl-0">
+            <div class="relative leading-[140%] inline-block min-w-[49px]">
+              Colors
+            </div>
+          </div>
+          <div class="flex flex-row items-start justify-start py-0 px-0">
+            <div
+              class="relative leading-[140%] inline-block min-w-[90px] shrink-0 whitespace-nowrap"
+            >
+              Color wheel
+            </div>
+          </div>
+          <div class="flex flex-row items-start justify-start py-0 pr-7 pl-0">
+            <div class="relative leading-[140%] inline-block min-w-[61px]">
+              Support
+            </div>
+          </div>
+          <div
+            class="flex flex-row items-start justify-start py-0 pr-[3px] pl-0"
+          >
+            <div class="relative leading-[140%] inline-block min-w-[86px]">
+              Developers
+            </div>
+          </div>
+          <div
+            class="w-[89px] flex flex-row items-start justify-start py-0 px-0 box-border"
+          >
+            <div
+              class="w-[123px] relative leading-[140%] flex items-center shrink-0"
+            >
+              Resource library
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
